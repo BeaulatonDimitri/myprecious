@@ -1,0 +1,61 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+    height: 100vh;
+   
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+ 
+}
+.txt {
+  white-space: nowrap;
+  font-size: 70px;
+  animation: scrollTxt 60s linear infinite;
+}
+
+.t1 {
+  color: black;
+}
+.t2 {
+  color: black;
+}
+
+@keyframes scrollTxt {
+  0%{
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@font-face {
+  font-family: "Rot-Proto-Roman";
+  src: url("/Users/dimitri/Documents/Master 2/Mon precieux/gotico-antiqua_Rot-102R/Rot-Proto-Roman102R.woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.container {
+  font-family: "Rot-Proto-Roman";
+
+
+}
+
+.hidden {
+  display: none;
+}

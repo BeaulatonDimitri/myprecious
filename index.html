@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body onLoad = "launchAudio();">
+    <div class="container">
+        <span class="txt t1">---UN ANNEAU POUR LES GOUVERNER TOUS, UN ANNEAU POUR LES TROUVER. UN ANNEAU POUR LES AMENER TOUS ET DANS LES TENEBRES LES LIER---&nbsp;</span>
+        <span class="txt t2">---UN ANNEAU POUR LES GOUVERNER TOUS, UN ANNEAU POUR LES TROUVER. UN ANNEAU POUR LES AMENER TOUS ET DANS LES TENEBRES LES LIER---&nbsp;</span>
+      </div>
+
+      <audio id="audio" class="hidden" src="/Users/dimitri/Documents/Master 2/Mon precieux/assets/sonSDA.mp3" controls>
+       
+        </audio>
+  </body>
+</html>
+
+<script type="text/javascript">
+
+    function launchAudio(){
+        let audio = document.getElementById("audio");
+        audio.currentTime = 0;
+        audio.play();
+    }
+</script>
